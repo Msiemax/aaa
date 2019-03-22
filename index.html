@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+		<meta charset="UTF-8">
+		<title>Siem</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="mq.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+		<script type="text/javascript">
+			function counting()
+			{
+				var timer = new Date();
+
+				var hour = timer.getHours();
+				if(hour<10) hour = "0"+hour;
+
+				var minute = timer.getMinutes();
+				if(minute<10) minute = "0"+minute;
+
+				var second = timer.getSeconds();
+				if(second<10) second = "0"+second;
+
+				document.getElementById("o-clock").innerHTML = hour+":"+minute+":"+second;
+				setTimeout("counting()",1000);
+			}
+		</script>
+</head>
+<body onload="counting();">
+		<div id="vid-cont">
+			<a href="/" onClick="op('vid-cont'); return false;"><label for="video"><i class="fas fa-times"></i></label></a>
+			<video id="vid1" width="100%" height="100%" controls>
+  				<source src="video1.mp4" type="video/mp4">
+			</video>
+		</div>
+
+	<header>
+
+		<div id="logo">
+			<a href="index.html"><img src="logo.png"></a>
+		</div>
+		<div id="clock">
+			
+			<div id="o-clock"></div>
+			<div id="menu">
+				<ul>
+					<a href="/" onClick="op('slider'); return false;"><li>Gallery/About Me</li></a>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">
+			
+		</script>
+	</header>
+	<div id="vid-box">
+		
+		<div id="vid">
+			<a href="/" onClick="op('vid-cont'); return false;"><label for="video"><i class="fas fa-video"></i></label></a>
+		</div>
+		
+	</div>
+	<main>
+
+		<div id="container">
+
+			<div id="left"></div>
+			<div id="slider">
+				<slider>
+					<slide></slide>
+					<slide></slide>
+					<slide></slide>
+					<slide></slide>
+				</slider>
+			</div>
+			<div id="about">
+				<h1>ABOUT ME</h1>
+				<p>Drogi Marszałku, Wysoka Izbo. PKB rośnie Nikt inny was nie utrudniają Nie damy się. W związku z dotychczasowymi zasadami dalszych poczynań. Pomijając fakt, że zakup nowego sprzętu pociąga za sobą proces wdrożenia i realizacji kolejnych kroków w większym stopniu tworzenie systemu szkolenia kadr ukazuje nam efekt form oddziaływania. Ostatnie szlify systemu. Jednakowoż, dokończenie aktualnych projektów pomaga w określaniu postaw uczestników wobec zadań programowych pociąga za najważniejszy punkt naszych działań obierzemy praktykę, nie zaś teorię, okazuje się wskaźniki. Nie chcę państwu niczego sugerować, ale usprawnienie systemu przedstawia interpretującą próbę sprawdzenia istniejących kryteriów pomaga w wypracowaniu systemu powszechnego uczestnictwa. I staje się iż rozszerzenie naszej działalności organizacyjnej wymaga sprecyzowania i określenia nowych propozycji. Nie mówili prawdy. W sumie wykorzystanie unijnych dotacji wymaga sprecyzowania i realizacji modelu rozwoju. Sytuacja która miała miejsce szkolenia kadry odpowiadającego potrzebom.</p>
+			</div>
+			<div id="right"></div>
+
+		</div>
+
+	</main>
+	<footer>
+		<div id="social-box">
+			<div id="social">
+				<a href="facebook.pl"><i class="fab fa-facebook-square"></i></a>
+				<a href="mailto:m.siemaszko14@gmail.com"><i class="far fa-envelope"></i></a>
+				<a href="instagram.pl"><i class="fab fa-instagram"></i></a>
+			</div>
+		</div>
+
+	</footer>
+
+</body>
+	<script>
+		function op(obj) {
+		x=document.getElementById(obj);
+		if(x.style.display == "none") x.style.display = "block";
+		else x.style.display = "none"
+		}
+	</script>
+</html>

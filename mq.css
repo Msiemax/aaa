@@ -1,0 +1,8 @@
+@media (min-width: 768px)
+{
+	#o-clock{display: block;}
+	#slider{display: block; width: 40vw; float: left;}
+	#about{display: block; width: 40vw; float: left; overflow: hidden;}
+	slider{width: 40vw;}
+	#menu{display: none;}
+}
