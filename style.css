@@ -1,6 +1,7 @@
 body{
 	margin: 0;
     padding: 0;
+    overflow-x: hidden;
     
 }
 .container{
@@ -10,13 +11,13 @@ body{
 	background-image: url(img/bg2.png);
 	background-repeat: no-repeat;
     background-size: cover;
-    overflow-x: hidden;
+    
     
     
 }
 .header{
 	height: 10vh;
-    width: 100%;
+    width: 100vw;
     
 }
 .header img{
@@ -69,7 +70,7 @@ body{
 }
 .site-nav{
     height: 20px;
-    width: 100%;
+    width: 100vw;
     
 }
 .site-menu{
