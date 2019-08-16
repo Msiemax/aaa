@@ -10,7 +10,7 @@ body{
 	background-image: url(img/bg2.png);
 	background-repeat: no-repeat;
     background-size: cover;
-    overflow-x: hidden;
+    
 }
 .header{
 	height: 10vh;
