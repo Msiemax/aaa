@@ -20,9 +20,10 @@ body{
     width: 100vw;
     
 }
-.header img{
+.header .logo{
     margin-top: 20px;
     padding-left: 45px;
+    width: 225px;
 }
 .hamburger{
     width: 25px;
@@ -98,22 +99,16 @@ body{
 .site-menu li{
     margin-top: 20px;
     color: #fff;
-    flex-basis: 100%;
-    display: flex;
-    height: 30px;
     text-transform: uppercase;
     font-family: 'Helvetica';
 }
 .site-menu a{
-    display: flex;
     padding: 10px;
-    box-sizing: border-box;
     text-decoration: none;
-    align-items: center;
     height: 100%;
     width: 100%;
-    border-radius: 5px;
 }
+
 .hamburger:focus ~ .site-menu, .site-menu:hover{
     display: flex;
 
@@ -190,18 +185,16 @@ form{
 	width: 100vw;
 	text-align: center;	
     position: relative;
-    background-image: url(img/about_project.jpg);
-	background-repeat: no-repeat;
-    background-size: cover;
+    
    
 
 }
 .bg{
 	height: 100vh;
 	width: 100%;
-    background: #000;
     opacity: 0.8;
-	position: relative;
+    position: relative;
+    background: #484d5c;
 }
 .bg_text{
 	width: 100%;
@@ -211,43 +204,46 @@ form{
 	left: 50%;
 }
 .bg .napis{
-	color: #a9a9a9;
+	color: #ffce00;
 	font-size: 50px;
-	font-family: 'Helvetica';
+	font-family: 'Oswald';
 	font-weight: bold;
 	
 }
 .bg .litera{
-	color: #b9b9a1;
+	color: #ffce00;
 	font-size: 50px;
-	font-family: 'Helvetica';
+	font-family: 'Oswald';
 	font-weight: bold;
 }
 .content_text{
 	width: 70%;
 	transform: translate(-50%, -50%);
 	position: absolute;
-	top: 40%;
+	top: 45%;
 	left: 50%;
 	
 }
 
 .first_text p{
-	color: #fff;
+	color: #c0ccd4;
 	font-size: 20px;
-	font-family: 'Helvetica';
+    font-family: 'League Gothic';
+    text-transform: uppercase;
 }
 
 .second_text p{
-	color: #fff;
+	color: #c0ccd4;
 	font-size: 20px;
-	font-family: 'Helvetica';
+    font-family: 'League Gothic';
+    text-transform: uppercase;
 }
 
 .third_text p{
-	color: #fff;
+	color: #c0ccd4;
 	font-size: 20px;
-	font-family: 'Helvetica';
+    font-family: 'League Gothic';
+    text-transform: uppercase;
 }
 .content_icons{
 	width: 70%;
@@ -262,7 +258,7 @@ form{
 
 
 .container_three{
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     
 }
@@ -271,9 +267,12 @@ form{
     background: #4d5b5d;
     
 }
+.about{
+ 
+}
 .about h1{
 		padding-bottom: 10px;
-		font-family: 'Helvetica';
+		font-family: 'Helvetica', sans-serif;
         font-size: 50px;
         text-align: center;
 }
@@ -291,7 +290,8 @@ form{
 .text h1{
 	font-size: 35px;
 	text-align: center;
-	color: #991701;
+    color: #991701;
+    font-family: 'Helvetica', sans-serif;
 }
 .text p{
 	color: #000;
@@ -306,3 +306,114 @@ form{
 	text-align: right;
 	padding-right: 10px;
 }
+
+
+.container_four {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+  }
+  .c-video{
+      width: 100%;
+      overflow: hidden;
+      
+  }
+  .c-video:hover .controls{
+      transform: translateY(0);
+  }
+  .container_four video {
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+.controls{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.7);
+    transform: translateY(100%) translateY(-5px);
+    transition: all 0.2s;
+}
+.buttons button{
+    background: none;
+    border: 0;
+    outline: 0;
+}
+.buttons{
+    padding: 10px;
+}
+.buttons button:before{
+    content: '\f144';
+    font-family: 'Font Awesome 5 Free';
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    font-size: 28px;
+    color: #fff;
+    -webkit-font-smoothing: antialiased; 
+}
+.buttons button.play:before{
+    content: '\f144';
+}
+.buttons button.pause:before{
+    content: '\f28b';
+}
+.orange-bar{
+    height: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+}
+.orange-juice{
+    height: 10px;
+    background-color: orange;
+}
+
+
+
+
+
+@media screen and (min-width: 700px) and (orientation:landscape) { 
+    .container_three{height: 125vh;}
+}
+
+@media screen and (min-width: 850px) { 
+
+    .header .logo{width: 250px; padding-left: 20px; float: left;}
+    .hamburger{display: none;}
+    .site-menu{display: block; position: static; float: left; height: 10vh; width: 45%;background: none;opacity: 1;z-index: 1;float: right;}
+    .site-menu ul{transform: none; position: static; margin-top: 20px; text-align: right; padding-right: 20px;}
+    .site-menu a{display: inline; cursor: pointer; }
+    .site-menu li{display: inline; color: #000; font-size: 15px;}
+    .site-menu .how_to_work{display: none;}
+    .site-menu:hover{display: block;}
+   
+    .container_three{height: 50vh;}
+    .container_four{display: none;}
+    .language{top: 10px;}
+    
+
+
+}
+
+@media screen and (min-width: 500px) { 
+
+.about{height: 80vh;}
+    .about .hi{display: none;}
+    .photo{width: 50%; float: left;  height: 100%;}
+    .photo img{ width: 70%; margin-top: 100px; }
+    .text{float: left; width: 50%; padding: 0;  text-align: justify; height: 100%;}
+    .text p{width: 90%;}
+    .social{margin-right: 20px;}
+}
+
+
+
+@media screen and (orientation:landscape) { }
