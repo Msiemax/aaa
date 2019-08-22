@@ -220,9 +220,9 @@ form{
 	width: 70%;
 	transform: translate(-50%, -50%);
 	position: absolute;
-	top: 45%;
+	top: 50%;
 	left: 50%;
-	
+	z-index: 2;
 }
 
 .first_text p{
@@ -249,7 +249,7 @@ form{
 	width: 70%;
 	transform: translate(-50%, -50%);
 	position: absolute;
-	top: 80%;
+	top: 90%;
 	left: 50%;
 
 }
@@ -380,11 +380,11 @@ form{
 
 
 
-@media screen and (min-width: 700px) and (orientation:landscape) { 
-    .container_three{height: 125vh;}
+@media screen and (min-width: 650px) and (orientation:landscape) { 
+    .container_three{height: 120vh;}
 }
 
-@media screen and (min-width: 850px) { 
+@media screen and (min-width: 900px) { 
 
     .header .logo{width: 250px; padding-left: 20px; float: left;}
     .hamburger{display: none;}
